@@ -1,0 +1,15 @@
+program frmPrincipal;
+
+uses
+  Vcl.Forms,
+  UPrincipal in 'UPrincipal.pas' {frmPadraoInicial},
+  DMPrincipal in 'DMPrincipal.pas' {PrincipalDM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPadraoInicial, frmPadraoInicial);
+  Application.Run;
+end.

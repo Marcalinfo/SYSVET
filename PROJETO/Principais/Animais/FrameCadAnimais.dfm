@@ -1,0 +1,742 @@
+object frmFrameCadAnimais: TfrmFrameCadAnimais
+  Left = 0
+  Top = 0
+  Width = 1122
+  Height = 458
+  TabOrder = 0
+  object pnlCentroAnimais: TPanel
+    Left = 0
+    Top = 0
+    Width = 1122
+    Height = 458
+    Align = alClient
+    BevelOuter = bvNone
+    Color = clWhite
+    ParentBackground = False
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 0
+      Top = 0
+      Width = 1122
+      Height = 458
+      Margins.Left = 0
+      Margins.Top = 10
+      Margins.Right = 0
+      Margins.Bottom = 10
+      Align = alClient
+      BevelOuter = bvNone
+      Color = 12615680
+      ParentBackground = False
+      TabOrder = 0
+      object Panel2: TPanel
+        Left = 0
+        Top = 0
+        Width = 1122
+        Height = 185
+        Margins.Left = 0
+        Margins.Right = 0
+        Align = alTop
+        BevelOuter = bvNone
+        Color = 15329769
+        ParentBackground = False
+        TabOrder = 0
+        DesignSize = (
+          1122
+          185)
+        object cxDBTextEdit1: TcxDBTextEdit
+          Left = 95
+          Top = 43
+          TabOrder = 0
+          Width = 90
+        end
+        object cxLabel1: TcxLabel
+          Left = 228
+          Top = 44
+          Caption = 'Nome :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxDBTextEdit2: TcxDBTextEdit
+          Left = 95
+          Top = 71
+          TabOrder = 2
+          Width = 190
+        end
+        object cxLabel2: TcxLabel
+          Left = 56
+          Top = 72
+          Caption = 'RGA :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxLabel3: TcxLabel
+          Left = 784
+          Top = 41
+          Caption = '( * )'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clRed
+          Style.Font.Height = -13
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+          Transparent = True
+        end
+        object cxLabel4: TcxLabel
+          Left = 291
+          Top = 69
+          Caption = '( * )'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clRed
+          Style.Font.Height = -13
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+          Transparent = True
+        end
+        object cxLabel15: TcxLabel
+          Left = 0
+          Top = 0
+          Align = alTop
+          Caption = 'Dados Principais'
+          ParentColor = False
+          ParentFont = False
+          Style.Color = clSilver
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = 12615680
+          Style.Font.Height = -16
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxLabel7: TcxLabel
+          Left = 458
+          Top = 72
+          Caption = 'Sexo :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cmbSexo: TcxImageComboBox
+          Left = 499
+          Top = 70
+          EditValue = 0
+          Properties.Items = <
+            item
+              Description = 'N'#227'o Informar'
+              ImageIndex = 0
+              Value = 0
+            end
+            item
+              Description = 'Macho'
+              Value = 1
+            end
+            item
+              Description = 'F'#234'mea'
+              Value = 2
+            end>
+          TabOrder = 8
+          Width = 86
+        end
+        object cxLabel8: TcxLabel
+          Left = 818
+          Top = 44
+          Anchors = [akRight, akBottom]
+          Caption = 'Foto :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object imgFoto: TdxSpinImage
+          Left = 858
+          Top = 44
+          Width = 151
+          Height = 125
+          Anchors = [akRight, akBottom]
+          AutoSize = False
+          BorderStyle = bsNone
+          DefaultImages = True
+          ImageHAlign = hsiCenter
+          ImageVAlign = vsiCenter
+          Items = <>
+          ItemIndex = 0
+          ReadOnly = False
+          Stretch = True
+          UpDownAlign = udaRight
+          UpDownOrientation = siVertical
+          UpDownWidth = 0
+          UseDblClick = True
+          Ctl3D = False
+          ParentColor = True
+          ParentCtl3D = False
+          TabOrder = 10
+        end
+        object cxLabel6: TcxLabel
+          Left = 41
+          Top = 44
+          Caption = 'C'#243'digo :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxDBTextEdit3: TcxDBTextEdit
+          Left = 279
+          Top = 43
+          TabOrder = 12
+          Width = 499
+        end
+        object cxLabel9: TcxLabel
+          Left = 191
+          Top = 43
+          Caption = '( * )'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clRed
+          Style.Font.Height = -13
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+          Transparent = True
+        end
+        object cxLabel10: TcxLabel
+          Left = 332
+          Top = 72
+          Caption = 'Idade :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxDBTextEdit4: TcxDBTextEdit
+          Left = 377
+          Top = 71
+          TabOrder = 15
+          Width = 63
+        end
+        object cxLabel11: TcxLabel
+          Left = 41
+          Top = 102
+          Caption = 'Especie :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxDBTextEdit5: TcxDBTextEdit
+          Left = 95
+          Top = 101
+          TabOrder = 17
+          Width = 129
+        end
+        object cxButton2: TcxButton
+          Left = 244
+          Top = 99
+          Width = 26
+          Height = 25
+          TabOrder = 18
+        end
+        object cxLabel12: TcxLabel
+          Left = 244
+          Top = 126
+          Caption = 'Informar Ra'#231'a ?'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.TextColor = 13111106
+          Style.IsFontAssigned = True
+        end
+        object cxLabel13: TcxLabel
+          Left = 276
+          Top = 103
+          Caption = 'Ra'#231'a :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxDBTextEdit6: TcxDBTextEdit
+          Left = 316
+          Top = 101
+          TabOrder = 21
+          Width = 124
+        end
+        object cxLabel14: TcxLabel
+          Left = 41
+          Top = 149
+          Caption = 'Cliente :'
+          ParentFont = False
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = clWindowText
+          Style.Font.Height = -11
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+        object cxDBTextEdit7: TcxDBTextEdit
+          Left = 93
+          Top = 148
+          TabOrder = 23
+          Width = 59
+        end
+        object cxDBTextEdit8: TcxDBTextEdit
+          Left = 158
+          Top = 149
+          TabOrder = 24
+          Width = 282
+        end
+      end
+      object Panel3: TPanel
+        Left = 0
+        Top = 185
+        Width = 1122
+        Height = 273
+        Margins.Left = 0
+        Margins.Top = 40
+        Margins.Right = 0
+        Margins.Bottom = 0
+        Align = alClient
+        BevelOuter = bvNone
+        Color = 15329769
+        ParentBackground = False
+        TabOrder = 1
+        object Panel4: TPanel
+          Left = 0
+          Top = 0
+          Width = 1122
+          Height = 40
+          Align = alTop
+          BevelOuter = bvNone
+          Color = 15329769
+          ParentBackground = False
+          TabOrder = 0
+          object cxGroupBox2: TcxGroupBox
+            Left = 0
+            Top = 0
+            Align = alClient
+            Alignment = alCenterCenter
+            Ctl3D = True
+            PanelStyle.Active = True
+            PanelStyle.OfficeBackgroundKind = pobkGradient
+            ParentCtl3D = False
+            Style.BorderStyle = ebsNone
+            Style.LookAndFeel.Kind = lfOffice11
+            Style.LookAndFeel.NativeStyle = True
+            Style.TransparentBorder = False
+            StyleDisabled.LookAndFeel.Kind = lfOffice11
+            StyleDisabled.LookAndFeel.NativeStyle = True
+            TabOrder = 0
+            Transparent = True
+            Height = 40
+            Width = 1122
+            object dxTileControl1: TdxTileControl
+              Left = 0
+              Top = 0
+              Width = 1122
+              Height = 40
+              Anchors = [akBottom]
+              AutoSize = True
+              Style.Gradient = gmBackwardDiagonal
+              Style.GradientBeginColor = 12615680
+              Style.GradientEndColor = 4194368
+              TabOrder = 0
+            end
+            object cxGroupBox5: TcxGroupBox
+              Left = 0
+              Top = 0
+              Align = alClient
+              Alignment = alCenterCenter
+              Ctl3D = True
+              PanelStyle.Active = True
+              PanelStyle.OfficeBackgroundKind = pobkGradient
+              ParentCtl3D = False
+              Style.BorderStyle = ebsNone
+              Style.LookAndFeel.Kind = lfOffice11
+              Style.LookAndFeel.NativeStyle = True
+              Style.TransparentBorder = False
+              StyleDisabled.LookAndFeel.Kind = lfOffice11
+              StyleDisabled.LookAndFeel.NativeStyle = True
+              TabOrder = 1
+              Transparent = True
+              Height = 40
+              Width = 1122
+              object Panel5: TPanel
+                Left = 0
+                Top = 2
+                Width = 1
+                Height = 37
+                Align = alLeft
+                BevelOuter = bvNone
+                Color = 15329769
+                ParentBackground = False
+                TabOrder = 0
+              end
+              object Panel6: TPanel
+                Left = 0
+                Top = 0
+                Width = 1122
+                Height = 1
+                Align = alTop
+                BevelOuter = bvNone
+                Color = 15329769
+                ParentBackground = False
+                TabOrder = 1
+              end
+              object Panel7: TPanel
+                Left = 0
+                Top = 39
+                Width = 1122
+                Height = 1
+                Align = alBottom
+                BevelOuter = bvNone
+                Color = clWhite
+                ParentBackground = False
+                TabOrder = 2
+              end
+              object Panel8: TPanel
+                Left = 0
+                Top = 1
+                Width = 1122
+                Height = 1
+                Align = alTop
+                BevelOuter = bvNone
+                Color = clWhite
+                ParentBackground = False
+                TabOrder = 3
+              end
+              object cxButton5: TcxButton
+                AlignWithMargins = True
+                Left = 3
+                Top = 5
+                Width = 100
+                Height = 31
+                Cursor = crHandPoint
+                Hint = 'Endere'#231'o'
+                Margins.Left = 2
+                Margins.Right = 1
+                Align = alLeft
+                Caption = 'Endere'#231'o'
+                Colors.Normal = 12615680
+                Colors.NormalText = clWhite
+                LookAndFeel.Kind = lfFlat
+                LookAndFeel.NativeStyle = False
+                OptionsImage.ImageIndex = 16
+                SpeedButtonOptions.CanBeFocused = False
+                SpeedButtonOptions.Transparent = True
+                TabOrder = 4
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = 8421440
+                Font.Height = -11
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+              object cxButton1: TcxButton
+                AlignWithMargins = True
+                Left = 106
+                Top = 5
+                Width = 100
+                Height = 31
+                Cursor = crHandPoint
+                Hint = 'Endere'#231'o'
+                Margins.Left = 2
+                Margins.Right = 1
+                Align = alLeft
+                Caption = 'Observa'#231#245'es'
+                Colors.Normal = 12615680
+                Colors.NormalText = clWhite
+                LookAndFeel.Kind = lfFlat
+                LookAndFeel.NativeStyle = False
+                OptionsImage.ImageIndex = 16
+                SpeedButtonOptions.CanBeFocused = False
+                SpeedButtonOptions.Transparent = True
+                TabOrder = 5
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = 8421440
+                Font.Height = -11
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+              end
+            end
+          end
+        end
+        object PgeCadastroComp: TcxPageControl
+          Left = 0
+          Top = 65
+          Width = 1122
+          Height = 208
+          Align = alClient
+          TabOrder = 1
+          Properties.ActivePage = tabEndereco
+          Properties.CustomButtons.Buttons = <>
+          LookAndFeel.NativeStyle = False
+          ClientRectBottom = 208
+          ClientRectRight = 1122
+          ClientRectTop = 0
+          object tabEndereco: TcxTabSheet
+            Hint = 'Endere'#231'o'
+            Caption = 'tabEndereco'
+            ImageIndex = 0
+            TabVisible = False
+            object Panel9: TPanel
+              Left = 0
+              Top = 0
+              Width = 1122
+              Height = 208
+              Margins.Left = 0
+              Margins.Top = 40
+              Margins.Right = 0
+              Margins.Bottom = 0
+              Align = alClient
+              BevelOuter = bvNone
+              Color = 15329769
+              ParentBackground = False
+              TabOrder = 0
+              object cxDBTextEdit11: TcxDBTextEdit
+                Left = 93
+                Top = 37
+                TabOrder = 0
+                Width = 377
+              end
+              object cxLabel17: TcxLabel
+                Left = 29
+                Top = 38
+                Caption = 'Endere'#231'o :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxDBTextEdit12: TcxDBTextEdit
+                Left = 93
+                Top = 63
+                TabOrder = 2
+                Width = 278
+              end
+              object cxLabel18: TcxLabel
+                Left = 46
+                Top = 64
+                Caption = 'Bairro :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxLabel19: TcxLabel
+                Left = 476
+                Top = 37
+                Caption = '( * )'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clRed
+                Style.Font.Height = -13
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+                Transparent = True
+              end
+              object cxLabel20: TcxLabel
+                Left = 373
+                Top = 63
+                Caption = '( * )'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clRed
+                Style.Font.Height = -13
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+                Transparent = True
+              end
+              object cxDBTextEdit13: TcxDBTextEdit
+                Left = 539
+                Top = 37
+                TabOrder = 6
+                Width = 61
+              end
+              object cxLabel21: TcxLabel
+                Left = 510
+                Top = 38
+                Caption = 'N'#186' :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxDBTextEdit14: TcxDBTextEdit
+                Left = 456
+                Top = 63
+                TabOrder = 8
+                Width = 144
+              end
+              object cxLabel22: TcxLabel
+                Left = 407
+                Top = 64
+                Caption = 'Cidade :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxLabel23: TcxLabel
+                Left = 42
+                Top = 91
+                Caption = 'Estado :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxDBTextEdit15: TcxDBTextEdit
+                Left = 93
+                Top = 90
+                TabOrder = 11
+                Width = 41
+              end
+              object cxDBTextEdit16: TcxDBTextEdit
+                Left = 228
+                Top = 89
+                TabOrder = 12
+                Width = 372
+              end
+              object cxLabel24: TcxLabel
+                Left = 140
+                Top = 90
+                Caption = 'Complemento :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxLabel25: TcxLabel
+                Left = 23
+                Top = 117
+                Caption = 'Referencia :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxDBTextEdit17: TcxDBTextEdit
+                Left = 93
+                Top = 117
+                TabOrder = 15
+                Width = 507
+              end
+            end
+          end
+          object tabObservacao: TcxTabSheet
+            Caption = 'tabObservacao'
+            ImageIndex = 0
+            TabVisible = False
+            object Panel10: TPanel
+              Left = 0
+              Top = 0
+              Width = 1122
+              Height = 208
+              Margins.Left = 0
+              Margins.Top = 40
+              Margins.Right = 0
+              Margins.Bottom = 0
+              Align = alClient
+              BevelOuter = bvNone
+              Color = 15329769
+              ParentBackground = False
+              TabOrder = 0
+              object cxLabel5: TcxLabel
+                Left = 21
+                Top = 31
+                Caption = 'Observa'#231#227'o :'
+                ParentFont = False
+                Style.Font.Charset = DEFAULT_CHARSET
+                Style.Font.Color = clWindowText
+                Style.Font.Height = -11
+                Style.Font.Name = 'Segoe UI'
+                Style.Font.Style = [fsBold]
+                Style.IsFontAssigned = True
+              end
+              object cxDBMemo1: TcxDBMemo
+                Left = 21
+                Top = 54
+                TabOrder = 1
+                Height = 199
+                Width = 607
+              end
+            end
+          end
+        end
+        object lblDadosComplementares: TcxLabel
+          Left = 0
+          Top = 40
+          Align = alTop
+          Caption = 'Dados Complementares : Observa'#231#227'o'
+          ParentColor = False
+          ParentFont = False
+          Style.Color = clSilver
+          Style.Font.Charset = DEFAULT_CHARSET
+          Style.Font.Color = 12615680
+          Style.Font.Height = -16
+          Style.Font.Name = 'Segoe UI'
+          Style.Font.Style = [fsBold]
+          Style.IsFontAssigned = True
+        end
+      end
+    end
+  end
+end
