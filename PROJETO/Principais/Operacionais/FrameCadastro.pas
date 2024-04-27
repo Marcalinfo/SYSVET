@@ -7,17 +7,16 @@ uses
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, cxGraphics,
   cxLookAndFeels, cxLookAndFeelPainters, Vcl.Menus, dxSkinsCore,
   dxSkinsDefaultPainters, Vcl.StdCtrls, cxButtons, cxControls, cxContainer,
-  cxEdit, cxLabel, cxTextEdit, dxCustomTileControl, dxTileControl, cxGroupBox,
-  DMPrincipal, FrameCadCliente;
+  cxEdit, cxLabel, cxTextEdit, dxCustomTileControl, dxTileControl, cxGroupBox;
 
 type
   TfrmFrameCadastro = class(TFrame)
     pnlCadastro: TPanel;
     pnlCrud: TPanel;
     btnFerramentas: TcxButton;
-    cxButton1: TcxButton;
-    cxButton2: TcxButton;
-    cxButton4: TcxButton;
+    btnIncluir: TcxButton;
+    btnAlterar: TcxButton;
+    btnExcluir: TcxButton;
     btnImprimir: TcxButton;
     Panel2: TPanel;
     Panel3: TPanel;
@@ -42,6 +41,8 @@ type
     Panel6: TPanel;
     pnlCentroCadastro: TPanel;
     Panel7: TPanel;
+    procedure btnIncluirClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -51,8 +52,39 @@ type
 
 implementation
 
+uses
+  DMPrincipal, FrameCadCliente, FrameEmpresa;
+
 {$R *.dfm}
 
 { TfrmFrameCadastro }
+
+procedure TfrmFrameCadastro.btnIncluirClick(Sender: TObject);
+var
+  frmFrameCadCliente : TfrmFrameCadCliente;
+  frmFrameCadEmpresa : TfrmFrameCadEmpresa;
+begin
+  if Assigned(frmFrameCadEmpresa) then
+  begin
+    with PrincipalDM do
+    begin
+      qryEmpresas.Insert;
+    end;
+  end;
+end;
+
+procedure TfrmFrameCadastro.btnSalvarClick(Sender: TObject);
+var
+  frmFrameCadCliente : TfrmFrameCadCliente;
+  frmFrameCadEmpresa : TfrmFrameCadEmpresa;
+begin
+  if Assigned(frmFrameCadEmpresa) then
+  begin
+    with PrincipalDM do
+    begin
+      qryEmpresas.post;
+    end;
+  end;
+end;
 
 end.

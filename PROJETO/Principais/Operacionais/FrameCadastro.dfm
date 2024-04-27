@@ -47,7 +47,6 @@ object frmFrameCadastro: TfrmFrameCadastro
         StyleDisabled.LookAndFeel.NativeStyle = True
         TabOrder = 0
         Transparent = True
-        ExplicitHeight = 38
         Height = 43
         Width = 776
         object btnFerramentas: TcxButton
@@ -76,7 +75,6 @@ object frmFrameCadastro: TfrmFrameCadastro
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 739
         end
         object btnImprimir: TcxButton
           AlignWithMargins = True
@@ -104,9 +102,8 @@ object frmFrameCadastro: TfrmFrameCadastro
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 703
         end
-        object cxButton1: TcxButton
+        object btnIncluir: TcxButton
           AlignWithMargins = True
           Left = 570
           Top = 1
@@ -132,9 +129,9 @@ object frmFrameCadastro: TfrmFrameCadastro
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 532
+          OnClick = btnIncluirClick
         end
-        object cxButton2: TcxButton
+        object btnAlterar: TcxButton
           AlignWithMargins = True
           Left = 611
           Top = 1
@@ -160,7 +157,6 @@ object frmFrameCadastro: TfrmFrameCadastro
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 604
         end
         object cxButton3: TcxButton
           Left = 0
@@ -189,9 +185,8 @@ object frmFrameCadastro: TfrmFrameCadastro
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitHeight = 37
         end
-        object cxButton4: TcxButton
+        object btnExcluir: TcxButton
           AlignWithMargins = True
           Left = 652
           Top = 1
@@ -217,7 +212,6 @@ object frmFrameCadastro: TfrmFrameCadastro
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitLeft = 595
         end
         object cxTextEdit1: TcxTextEdit
           Left = 29
@@ -266,7 +260,6 @@ object frmFrameCadastro: TfrmFrameCadastro
           Color = 15329769
           ParentBackground = False
           TabOrder = 7
-          ExplicitTop = 37
         end
       end
     end
@@ -280,7 +273,6 @@ object frmFrameCadastro: TfrmFrameCadastro
       Color = 15329769
       ParentBackground = False
       TabOrder = 1
-      ExplicitTop = 38
       object cxGroupBox3: TcxGroupBox
         Left = 0
         Top = 0
@@ -484,8 +476,7 @@ object frmFrameCadastro: TfrmFrameCadastro
             Font.Name = 'Segoe UI'
             Font.Style = [fsBold]
             ParentFont = False
-            ExplicitTop = 0
-            ExplicitHeight = 34
+            OnClick = btnSalvarClick
           end
           object btnCancelar: TcxButton
             AlignWithMargins = True
@@ -513,9 +504,6 @@ object frmFrameCadastro: TfrmFrameCadastro
             Font.Name = 'Segoe UI'
             Font.Style = [fsBold]
             ParentFont = False
-            ExplicitLeft = 746
-            ExplicitTop = 1
-            ExplicitHeight = 40
           end
           object Panel5: TPanel
             Left = 0
@@ -527,9 +515,6 @@ object frmFrameCadastro: TfrmFrameCadastro
             Color = 15329769
             ParentBackground = False
             TabOrder = 2
-            ExplicitLeft = 8
-            ExplicitTop = 0
-            ExplicitHeight = 40
           end
           object Panel6: TPanel
             Left = 0
@@ -541,7 +526,6 @@ object frmFrameCadastro: TfrmFrameCadastro
             Color = 15329769
             ParentBackground = False
             TabOrder = 3
-            ExplicitTop = 37
           end
           object Panel7: TPanel
             Left = 0
@@ -553,7 +537,6 @@ object frmFrameCadastro: TfrmFrameCadastro
             Color = 15329769
             ParentBackground = False
             TabOrder = 4
-            ExplicitTop = 37
           end
         end
       end
@@ -568,9 +551,6 @@ object frmFrameCadastro: TfrmFrameCadastro
       Color = clWhite
       ParentBackground = False
       TabOrder = 3
-      ExplicitLeft = 8
-      ExplicitTop = 187
-      ExplicitHeight = 59
     end
   end
 end

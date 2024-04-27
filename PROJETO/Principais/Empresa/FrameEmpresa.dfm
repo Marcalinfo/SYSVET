@@ -46,6 +46,8 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
         object cxDBTextEdit1: TcxDBTextEdit
           Left = 95
           Top = 43
+          DataBinding.DataField = 'ID'
+          DataBinding.DataSource = PrincipalDM.dtsEmpresas
           TabOrder = 0
           Width = 90
         end
@@ -64,6 +66,8 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
         object cxDBTextEdit2: TcxDBTextEdit
           Left = 95
           Top = 122
+          DataBinding.DataField = 'EMP_CNPJ_CPF'
+          DataBinding.DataSource = PrincipalDM.dtsEmpresas
           TabOrder = 2
           Width = 190
         end
@@ -135,37 +139,10 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
         object cxDBTextEdit10: TcxDBTextEdit
           Left = 188
           Top = 151
+          DataBinding.DataField = 'EMP_TEL_NUM'
+          DataBinding.DataSource = PrincipalDM.dtsEmpresas
           TabOrder = 8
           Width = 177
-        end
-        object cxImageComboBox1: TcxImageComboBox
-          Left = 92
-          Top = 150
-          EditValue = 0
-          Properties.Items = <
-            item
-              Description = 'Comercial'
-              ImageIndex = 0
-              Value = 0
-            end
-            item
-              Description = 'Residencial'
-              Value = 1
-            end
-            item
-              Description = 'Celular'
-              Value = 2
-            end
-            item
-              Description = 'Whatsapp'
-              Value = 3
-            end
-            item
-              Description = 'Outros'
-              Value = 5
-            end>
-          TabOrder = 9
-          Width = 90
         end
         object cxLabel8: TcxLabel
           Left = 1013
@@ -195,7 +172,9 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
         object cxDBTextEdit3: TcxDBTextEdit
           Left = 95
           Top = 67
-          TabOrder = 12
+          DataBinding.DataField = 'EMP_RAZ'
+          DataBinding.DataSource = PrincipalDM.dtsEmpresas
+          TabOrder = 11
           Width = 499
         end
         object cxLabel9: TcxLabel
@@ -226,7 +205,9 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
         object cxDBTextEdit5: TcxDBTextEdit
           Left = 95
           Top = 94
-          TabOrder = 15
+          DataBinding.DataField = 'EMP_FAN'
+          DataBinding.DataSource = PrincipalDM.dtsEmpresas
+          TabOrder = 14
           Width = 499
         end
         object cxLabel12: TcxLabel
@@ -247,9 +228,39 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
           Top = 68
           Anchors = [akRight, akBottom]
           AutoSize = True
-          TabOrder = 17
+          TabOrder = 16
           Height = 112
           Width = 181
+        end
+        object cxDBImageComboBox1: TcxDBImageComboBox
+          Left = 95
+          Top = 151
+          DataBinding.DataField = 'EMP_TEL_TIP'
+          DataBinding.DataSource = PrincipalDM.dtsEmpresas
+          Properties.Items = <
+            item
+              Description = 'Comercial'
+              ImageIndex = 0
+              Value = 0
+            end
+            item
+              Description = 'Residencial'
+              Value = 1
+            end
+            item
+              Description = 'Celular'
+              Value = 2
+            end
+            item
+              Description = 'Whatsapp'
+              Value = 3
+            end
+            item
+              Description = 'Outros'
+              Value = 4
+            end>
+          TabOrder = 17
+          Width = 88
         end
       end
       object Panel3: TPanel

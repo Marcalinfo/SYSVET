@@ -25,7 +25,6 @@ type
     cxLabel15: TcxLabel;
     cxLabel16: TcxLabel;
     cxDBTextEdit10: TcxDBTextEdit;
-    cxImageComboBox1: TcxImageComboBox;
     cxLabel8: TcxLabel;
     cxLabel6: TcxLabel;
     cxDBTextEdit3: TcxDBTextEdit;
@@ -62,7 +61,7 @@ type
     cxLabel13: TcxLabel;
     cxLabel14: TcxLabel;
     cxImage1: TcxImage;
-    cxButton2: TcxButton;
+    cxDBImageComboBox1: TcxDBImageComboBox;
   private
     { Private declarations }
   public

@@ -5,7 +5,7 @@ object PrincipalDM: TPrincipalDM
   object img16: TcxImageList
     SourceDPI = 96
     FormatVersion = 1
-    DesignInfo = 1048600
+    DesignInfo = 1049024
     ImageInfo = <
       item
         ImageClass = 'TdxPNGImage'
@@ -376,7 +376,7 @@ object PrincipalDM: TPrincipalDM
     Height = 24
     Width = 24
     FormatVersion = 1
-    DesignInfo = 1048656
+    DesignInfo = 3670464
     ImageInfo = <
       item
         ImageClass = 'TdxPNGImage'
@@ -865,7 +865,7 @@ object PrincipalDM: TPrincipalDM
     Height = 32
     Width = 32
     FormatVersion = 1
-    DesignInfo = 1048712
+    DesignInfo = 6291904
     ImageInfo = <
       item
         ImageClass = 'TdxPNGImage'
@@ -1466,5 +1466,97 @@ object PrincipalDM: TPrincipalDM
           FD22D23BA431E048EE4EBA1F817D05EA33132E11AE276FEEC7E614204074210D
           E27E07A89E738079FB17F60D1957137A178F80F20000000049454E44AE426082}
       end>
+  end
+  object FDConnectionSYSVET: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Mar'#231'al computer\Desktop\TCC\SYSVET\Banco\SYSPE' +
+        'T.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'DriverID=FB')
+    Connected = True
+    Left = 32
+    Top = 16
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    VendorLib = 'C:\Users\Mar'#231'al computer\Desktop\TCC\SYSVET\Banco\fbclient.dll'
+    Left = 32
+    Top = 80
+  end
+  object qryEmpresas: TFDQuery
+    Active = True
+    OnNewRecord = qryEmpresasNewRecord
+    Connection = FDConnectionSYSVET
+    UpdateObject = upsEmpresas
+    SQL.Strings = (
+      'select * from empresas')
+    Left = 136
+    Top = 16
+    object qryEmpresasID: TIntegerField
+      FieldName = 'ID'
+      Origin = 'ID'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryEmpresasEMP_RAZ: TStringField
+      FieldName = 'EMP_RAZ'
+      Origin = 'EMP_RAZ'
+      Size = 255
+    end
+    object qryEmpresasEMP_FAN: TStringField
+      FieldName = 'EMP_FAN'
+      Origin = 'EMP_FAN'
+      Size = 255
+    end
+    object qryEmpresasEMP_CNPJ_CPF: TStringField
+      FieldName = 'EMP_CNPJ_CPF'
+      Origin = 'EMP_CNPJ_CPF'
+    end
+    object qryEmpresasEMP_TEL_TIP: TIntegerField
+      FieldName = 'EMP_TEL_TIP'
+      Origin = 'EMP_TEL_TIP'
+    end
+    object qryEmpresasEMP_TEL_NUM: TStringField
+      FieldName = 'EMP_TEL_NUM'
+      Origin = 'EMP_TEL_NUM'
+    end
+  end
+  object dtsEmpresas: TDataSource
+    DataSet = qryEmpresas
+    Left = 136
+    Top = 80
+  end
+  object upsEmpresas: TFDUpdateSQL
+    Connection = FDConnectionSYSVET
+    InsertSQL.Strings = (
+      'INSERT INTO EMPRESAS'
+      '(ID, EMP_RAZ, EMP_FAN, EMP_CNPJ_CPF, EMP_TEL_TIP, '
+      '  EMP_TEL_NUM)'
+      
+        'VALUES (:NEW_ID, :NEW_EMP_RAZ, :NEW_EMP_FAN, :NEW_EMP_CNPJ_CPF, ' +
+        ':NEW_EMP_TEL_TIP, '
+      '  :NEW_EMP_TEL_NUM)')
+    ModifySQL.Strings = (
+      'UPDATE EMPRESAS'
+      
+        'SET ID = :NEW_ID, EMP_RAZ = :NEW_EMP_RAZ, EMP_FAN = :NEW_EMP_FAN' +
+        ', '
+      
+        '  EMP_CNPJ_CPF = :NEW_EMP_CNPJ_CPF, EMP_TEL_TIP = :NEW_EMP_TEL_T' +
+        'IP, '
+      '  EMP_TEL_NUM = :NEW_EMP_TEL_NUM'
+      'WHERE ID = :OLD_ID')
+    DeleteSQL.Strings = (
+      'DELETE FROM EMPRESAS'
+      'WHERE ID = :OLD_ID')
+    FetchRowSQL.Strings = (
+      
+        'SELECT ID, EMP_RAZ, EMP_FAN, EMP_CNPJ_CPF, EMP_TEL_TIP, EMP_TEL_' +
+        'NUM'
+      'FROM EMPRESAS'
+      'WHERE ID = :OLD_ID')
+    Left = 136
+    Top = 136
   end
 end
