@@ -3426,6 +3426,8 @@ object frmPadraoInicial: TfrmPadraoInicial
               Font.Style = [fsBold]
               ParentFont = False
               OnClick = cxButton1Click
+              ExplicitLeft = -1
+              ExplicitTop = 3
             end
           end
           object cxGroupBox3: TcxGroupBox
