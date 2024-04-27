@@ -85,9 +85,9 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <UWP_DelphiLogo44>..\_63528b7a-2b7b-4f0e-b58e-96f71273103b.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>..\_63528b7a-2b7b-4f0e-b58e-96f71273103b.png</UWP_DelphiLogo150>
-        <Icon_MainIcon>..\icone-branco-60.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>..\Icones\icone 60.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>..\Icones\icone branco 60.png</UWP_DelphiLogo150>
+        <Icon_MainIcon>frmPrincipal_Icon2.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -160,10 +160,17 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="..\_63528b7a-2b7b-4f0e-b58e-96f71273103b.png" Configuration="Debug" Class="UWP_DelphiLogo44">
+                <DeployFile LocalName="..\Icones\icone 60.png" Configuration="Debug" Class="UWP_DelphiLogo44">
                     <Platform Name="Win32">
                         <RemoteDir>Assets\</RemoteDir>
                         <RemoteName>Logo44x44.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="..\Icones\icone branco 60.png" Configuration="Debug" Class="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo150x150.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

@@ -3449,7 +3449,7 @@ object frmPadraoInicial: TfrmPadraoInicial
             Width = 201
             object cxLabel4: TcxLabel
               Left = 14
-              Top = 0
+              Top = 1
               Caption = 'V.01.00.24 - 16.03.2024'
               ParentFont = False
               Style.Font.Charset = DEFAULT_CHARSET
