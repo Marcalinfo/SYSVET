@@ -3336,7 +3336,7 @@ object frmPadraoInicial: TfrmPadraoInicial
               Height = 35
               Cursor = crHandPoint
               Align = alClient
-              Caption = 'Estoque'
+              Caption = 'Produtos'
               Colors.NormalText = 12615680
               OptionsImage.ImageIndex = 6
               OptionsImage.Images = PrincipalDM.img24
@@ -3426,8 +3426,6 @@ object frmPadraoInicial: TfrmPadraoInicial
               Font.Style = [fsBold]
               ParentFont = False
               OnClick = cxButton1Click
-              ExplicitLeft = -1
-              ExplicitTop = 3
             end
           end
           object cxGroupBox3: TcxGroupBox
@@ -4070,7 +4068,6 @@ object frmPadraoInicial: TfrmPadraoInicial
       SpeedButtonOptions.CanBeFocused = False
       TabOrder = 3
       OnClick = cxButton9Click
-      ExplicitTop = 6
     end
     object cxButton8: TcxButton
       AlignWithMargins = True

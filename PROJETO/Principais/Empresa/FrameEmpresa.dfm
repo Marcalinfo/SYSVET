@@ -439,6 +439,37 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
                 Font.Style = [fsBold]
                 ParentFont = False
               end
+              object cxButton2: TcxButton
+                AlignWithMargins = True
+                Left = 209
+                Top = 5
+                Width = 100
+                Height = 31
+                Cursor = crHandPoint
+                Hint = 'Endere'#231'o'
+                Margins.Left = 2
+                Margins.Right = 1
+                Align = alLeft
+                Caption = 'Auditoria'
+                Colors.Normal = 12615680
+                Colors.NormalText = clWhite
+                LookAndFeel.Kind = lfFlat
+                LookAndFeel.NativeStyle = False
+                OptionsImage.ImageIndex = 17
+                OptionsImage.Images = PrincipalDM.img24
+                OptionsImage.Layout = blGlyphRight
+                SpeedButtonOptions.CanBeFocused = False
+                SpeedButtonOptions.Transparent = True
+                TabOrder = 6
+                Font.Charset = DEFAULT_CHARSET
+                Font.Color = 8421440
+                Font.Height = -11
+                Font.Name = 'Segoe UI'
+                Font.Style = [fsBold]
+                ParentFont = False
+                ExplicitLeft = 291
+                ExplicitTop = 6
+              end
             end
           end
         end

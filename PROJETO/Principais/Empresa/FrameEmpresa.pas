@@ -62,6 +62,7 @@ type
     cxLabel14: TcxLabel;
     cxImage1: TcxImage;
     cxDBImageComboBox1: TcxDBImageComboBox;
+    cxButton2: TcxButton;
   private
     { Private declarations }
   public
