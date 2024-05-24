@@ -1,0 +1,16 @@
+unit Ufuncoes;
+
+interface
+
+type
+  TFuncoesGerais = class
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+implementation
+
+end.

@@ -3201,7 +3201,7 @@ object frmPadraoInicial: TfrmPadraoInicial
           object pnlAgenda: TPanel
             AlignWithMargins = True
             Left = 5
-            Top = 125
+            Top = 45
             Width = 191
             Height = 35
             Margins.Left = 5
@@ -3213,6 +3213,7 @@ object frmPadraoInicial: TfrmPadraoInicial
             Color = 15329769
             ParentBackground = False
             TabOrder = 0
+            ExplicitTop = 29
             object cxButton2: TcxButton
               Left = 0
               Top = 0
@@ -3234,12 +3235,14 @@ object frmPadraoInicial: TfrmPadraoInicial
               Font.Style = [fsBold]
               ParentFont = False
               OnClick = cxButton1Click
+              ExplicitLeft = 9
+              ExplicitTop = 3
             end
           end
           object pnlAnimais: TPanel
             AlignWithMargins = True
             Left = 5
-            Top = 45
+            Top = 85
             Width = 191
             Height = 35
             Margins.Left = 5
@@ -3251,6 +3254,7 @@ object frmPadraoInicial: TfrmPadraoInicial
             Color = 15329769
             ParentBackground = False
             TabOrder = 1
+            ExplicitTop = 45
             object cxButton4: TcxButton
               Left = 0
               Top = 0
@@ -3317,7 +3321,7 @@ object frmPadraoInicial: TfrmPadraoInicial
           object pnlEstoque: TPanel
             AlignWithMargins = True
             Left = 5
-            Top = 85
+            Top = 165
             Width = 191
             Height = 35
             Margins.Left = 5
@@ -3329,6 +3333,7 @@ object frmPadraoInicial: TfrmPadraoInicial
             Color = 15329769
             ParentBackground = False
             TabOrder = 3
+            ExplicitTop = 85
             object cxButton7: TcxButton
               Left = 0
               Top = 0
@@ -3355,7 +3360,7 @@ object frmPadraoInicial: TfrmPadraoInicial
           object pnlFinanceiro: TPanel
             AlignWithMargins = True
             Left = 5
-            Top = 165
+            Top = 125
             Width = 191
             Height = 35
             Margins.Left = 5
@@ -3367,6 +3372,8 @@ object frmPadraoInicial: TfrmPadraoInicial
             Color = 15329769
             ParentBackground = False
             TabOrder = 4
+            ExplicitLeft = 2
+            ExplicitTop = 101
             object cxButton5: TcxButton
               Left = 0
               Top = 0
@@ -3388,12 +3395,14 @@ object frmPadraoInicial: TfrmPadraoInicial
               Font.Style = [fsBold]
               ParentFont = False
               OnClick = cxButton1Click
+              ExplicitLeft = -1
+              ExplicitTop = 16
             end
           end
           object pnlFrenteCaixa: TPanel
             AlignWithMargins = True
             Left = 5
-            Top = 205
+            Top = 245
             Width = 191
             Height = 35
             Margins.Left = 5
@@ -3405,16 +3414,17 @@ object frmPadraoInicial: TfrmPadraoInicial
             Color = 15329769
             ParentBackground = False
             TabOrder = 5
-            object cxButton6: TcxButton
+            ExplicitTop = 205
+            object btnDashBord: TcxButton
               Left = 0
               Top = 0
               Width = 191
               Height = 35
               Cursor = crHandPoint
               Align = alClient
-              Caption = 'Frente de Caixa'
+              Caption = 'Dashboard'
               Colors.NormalText = 12615680
-              OptionsImage.ImageIndex = 5
+              OptionsImage.ImageIndex = 18
               OptionsImage.Images = PrincipalDM.img24
               OptionsImage.Margin = 1
               SpeedButtonOptions.Transparent = True
@@ -3473,6 +3483,44 @@ object frmPadraoInicial: TfrmPadraoInicial
               Style.TextStyle = []
               Style.IsFontAssigned = True
               Transparent = True
+            end
+          end
+          object Panel4: TPanel
+            AlignWithMargins = True
+            Left = 5
+            Top = 205
+            Width = 191
+            Height = 35
+            Margins.Left = 5
+            Margins.Top = 0
+            Margins.Right = 5
+            Margins.Bottom = 5
+            Align = alTop
+            BevelOuter = bvNone
+            Color = 15329769
+            ParentBackground = False
+            TabOrder = 7
+            object cxButton10: TcxButton
+              Left = 0
+              Top = 0
+              Width = 191
+              Height = 35
+              Cursor = crHandPoint
+              Align = alClient
+              Caption = 'Frente de Caixa'
+              Colors.NormalText = 12615680
+              OptionsImage.ImageIndex = 5
+              OptionsImage.Images = PrincipalDM.img24
+              OptionsImage.Margin = 1
+              SpeedButtonOptions.Transparent = True
+              TabOrder = 0
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = 8421440
+              Font.Height = -11
+              Font.Name = 'Segoe UI'
+              Font.Style = [fsBold]
+              ParentFont = False
+              OnClick = cxButton1Click
             end
           end
         end

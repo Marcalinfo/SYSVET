@@ -40,12 +40,14 @@ type
     pnlFinanceiro: TPanel;
     cxButton5: TcxButton;
     pnlFrenteCaixa: TPanel;
-    cxButton6: TcxButton;
+    btnDashBord: TcxButton;
     cxGroupBox3: TcxGroupBox;
     cxLabel4: TcxLabel;
     cxLabel5: TcxLabel;
     cxButton9: TcxButton;
     cxButton8: TcxButton;
+    Panel4: TPanel;
+    cxButton10: TcxButton;
     procedure cxButton1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure cxButton3Click(Sender: TObject);

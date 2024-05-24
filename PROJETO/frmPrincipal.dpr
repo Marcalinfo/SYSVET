@@ -7,7 +7,8 @@ uses
   FrameCadastro in 'Principais\Operacionais\FrameCadastro.pas' {frmFrameCadastro: TFrame},
   FrameCadCliente in 'Principais\Cliente\FrameCadCliente.pas' {frmFrameCadCliente: TFrame},
   FrameEmpresa in 'Principais\Empresa\FrameEmpresa.pas' {frmFrameCadEmpresa: TFrame},
-  FrameCadAnimais in 'Principais\Animais\FrameCadAnimais.pas' {frmFrameCadAnimais: TFrame};
+  FrameCadAnimais in 'Principais\Animais\FrameCadAnimais.pas' {frmFrameCadAnimais: TFrame},
+  Ufuncoes in 'Principais\Operacionais\Ufuncoes.pas';
 
 {$R *.res}
 

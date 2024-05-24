@@ -66,7 +66,7 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
         object cxDBTextEdit2: TcxDBTextEdit
           Left = 95
           Top = 122
-          DataBinding.DataField = 'EMP_CNPJ_CPF'
+          DataBinding.DataField = 'EMP_CPFORCNPJ'
           DataBinding.DataSource = PrincipalDM.dtsEmpresas
           TabOrder = 2
           Width = 190
@@ -467,8 +467,6 @@ object frmFrameCadEmpresa: TfrmFrameCadEmpresa
                 Font.Name = 'Segoe UI'
                 Font.Style = [fsBold]
                 ParentFont = False
-                ExplicitLeft = 291
-                ExplicitTop = 6
               end
             end
           end

@@ -24,9 +24,20 @@ type
     qryEmpresasID: TIntegerField;
     qryEmpresasEMP_RAZ: TStringField;
     qryEmpresasEMP_FAN: TStringField;
-    qryEmpresasEMP_CNPJ_CPF: TStringField;
+    qryEmpresasEMP_CPFORCNPJ: TStringField;
     qryEmpresasEMP_TEL_TIP: TIntegerField;
     qryEmpresasEMP_TEL_NUM: TStringField;
+    qryEmpresasEMP_ENDERECO: TStringField;
+    qryEmpresasEMP_BAIRRO: TStringField;
+    qryEmpresasEMP_NUMERO: TIntegerField;
+    qryEmpresasEMP_ESTADO: TStringField;
+    qryEmpresasEMP_UF: TStringField;
+    qryEmpresasEMP_CIDADE: TStringField;
+    qryEmpresasEMP_COMPLEMENTO: TStringField;
+    qryEmpresasEMP_REFERENCIA: TStringField;
+    qryEmpresasDATA_CAD: TSQLTimeStampField;
+    qryEmpresasDATA_ALT: TSQLTimeStampField;
+    qryEmpresasUSUARIO: TStringField;
     procedure qryEmpresasNewRecord(DataSet: TDataSet);
   private
     { Private declarations }
@@ -47,7 +58,7 @@ procedure TPrincipalDM.qryEmpresasNewRecord(DataSet: TDataSet);
 begin
   qryEmpresasEMP_RAZ.AsString := '';
   qryEmpresasEMP_FAN.AsString := '';
-  qryEmpresasEMP_CNPJ_CPF.AsString := '';
+  qryEmpresasEMP_CPFORCNPJ.AsString := '';
   qryEmpresasEMP_TEL_TIP.AsInteger := 0;
   qryEmpresasEMP_TEL_NUM.AsString := '';
 

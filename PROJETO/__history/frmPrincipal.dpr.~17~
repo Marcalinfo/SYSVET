@@ -1,0 +1,20 @@
+program frmPrincipal;
+
+uses
+  Vcl.Forms,
+  UPrincipal in 'UPrincipal.pas' {frmPadraoInicial},
+  DMPrincipal in 'DMPrincipal.pas' {PrincipalDM: TDataModule},
+  FrameCadastro in 'Principais\Operacionais\FrameCadastro.pas' {frmFrameCadastro: TFrame},
+  FrameCadCliente in 'Principais\Cliente\FrameCadCliente.pas' {frmFrameCadCliente: TFrame},
+  FrameEmpresa in 'Principais\Empresa\FrameEmpresa.pas' {frmFrameCadEmpresa: TFrame},
+  FrameCadAnimais in 'Principais\Animais\FrameCadAnimais.pas' {frmFrameCadAnimais: TFrame};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPadraoInicial, frmPadraoInicial);
+  Application.CreateForm(TPrincipalDM, PrincipalDM);
+  Application.Run;
+end.
